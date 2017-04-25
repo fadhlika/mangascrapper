@@ -7,7 +7,6 @@ Jinja2==2.9.6
 lxml==3.7.3
 MarkupSafe==1.0
 packaging==16.8
-post==0.0.0
 public==0.0.0
 pyparsing==2.2.0
 query-string==0.0.0
