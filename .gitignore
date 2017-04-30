@@ -97,3 +97,6 @@ env/
 
 # mkdocs documentation
 /site
+
+#database
+.db
