@@ -92,11 +92,9 @@ env/
 .spyderproject
 .spyproject
 
+
 # Rope project settings
 .ropeproject
 
 # mkdocs documentation
 /site
-
-#database
-.db
