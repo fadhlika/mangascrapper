@@ -12,7 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
-@app.before_first_request
+@app.cli.command('initdb')
 def initialize_database():
     db.create_all()
 
