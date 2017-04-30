@@ -36,9 +36,8 @@ def initialize_database():
             page_page = requests.get(ch.link)
             page_tree = html.fromstring(page_page.content)
 
-            last_page = page_tree.xpath("//li/a[contains(text(), 'Last Page')]")[0]
-
             try:
+                last_page = page_tree.xpath("//li/a[contains(text(), 'Last Page')]")[0]
                 page_number = int(page_tree.xpath(last_page.text.split('(')[1].split(')')[0]))
             except:
                 page_number = 1
